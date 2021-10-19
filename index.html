@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon logo maker</title>
+    <style>
+        section {
+            width: 90%;
+            max-width: 800px;
+            border-radius: 20px;
+            padding: 20px;
+            background: rgb(214, 214, 214);
+            margin: 40px auto;
+            position: relative;
+        }
+        #logos {
+            position: relative;
+            display: inline-block;
+            padding: 20px;
+            background: #fff;
+        }
+        .arrow {
+            z-index: 100;
+            position: absolute;
+            width: 140px;
+            display: inline-block;
+            left: 50%;
+            top: 48%;
+            transform: translateX(-50%);
+        }
+        .copyright {
+            position: absolute;
+            margin-right: 20px;
+            bottom: 0;
+            right: 0;
+        }
+        .img {
+            margin-left: 4px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <form action="">
+            <input type="text" id="string">
+            <input type="button" onclick="start()" value="作成">
+            <p>*半角小文字の英語のみ対応しています。</p>
+        </form>
+        <div id="logos">
+        </div>
+        <span class="copyright">© 2021 OGAWA KEITO</span>
+    </section>
+
+    <script src="make.js"></script>
+</body>
+</html>
